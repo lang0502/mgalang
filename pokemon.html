@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <title>Fotoku</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900'><link rel="stylesheet" href="fotoku/style.css">
+
+
+
+</head>
+<body width = "device-width">
+
+
+
+
+
+
+
+ 
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+  document.getElementById("openfull").style.display = "none";
+  document.getElementById("exitfull").style.display = "block";
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+  document.getElementById("openfull").style.display = "block";
+  document.getElementById("exitfull").style.display = "none";
+}
+
+</script>
+
+
+
+<!-- partial:index.partial.html -->
+<main id=app>
+  
+  
+   
+  
+    
+  <p>Jangan Lupa Follow Ig <a target="_top" href="https://instagram.com/galngfp"> @galngfp </a></p>
+  
+ 
+  <button aria-label="Open Fullscreen" id="openfull" onclick="openFullscreen();"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M5,5H10V7H7V10H5V5M14,5H19V10H17V7H14V5M17,14H19V19H14V17H17V14M10,17V19H5V14H7V17H10Z" /></svg></button>
+<button aria-label="Exit Fullscreen" id="exitfull" onclick="closeFullscreen();"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,8V10H14V5H16V8H19Z" /></svg></button>
+  
+  
+    
+  <h1>Fotoku</h1>
+  
+
+  
+  
+  
+  <section class="cards">
+    <div class="card charizard animated"></div>
+    <div class="card pika animated"></div>
+    <div class="card eevee animated"></div>
+    <div class="card mewtwo animated"></div>
+  </section>
+  
+
+  
+  
+  
+  
+  <style class="hover"></style>
+  
+  <section class="demo">
+    <div class="card"></div>
+    <span class="operator">+</span>
+    <div class="card"><span>Blink</span></div>
+    <span class="operator">+</span>
+    <div class="card"><span>RGB</span></div>
+  </section>
+
+  
+</main>
+
+
+<section class="promo">
+  <p>
+  <a target="_top" href="https://ghel-mie-cipeundeuy.vercel.app/">
+    Design Iklan Web by Galang
+    <img src="https://lang0502.github.io/galngfp/Picsart_24-05-27_21-53-56-020.jpg" alt="">
+  </a>
+  </p>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="fotoku/script.js"></script>
+
+</body>
+</html>
